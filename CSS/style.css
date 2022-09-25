@@ -3,7 +3,6 @@ body {
   color: var(--title-color);
   letter-spacing: 0.03em;
   font-size: 14px;
-
 }
 
 .link {
@@ -13,7 +12,7 @@ body {
 .list {
   list-style: none;
 }
-:root{
+:root {
   --link-text-color: #212121;
   --title-color: #212121;
   --text-color: #757575;
@@ -36,20 +35,58 @@ body {
   overflow: hidden;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+img{
+  display: block;
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+
 /*__________ HEDER+HEDER(PORTFOLIO) __________ */
+
+.header{
+background-color: rgba(12, 238, 31, 0.945);
+padding-top: 24px;
+padding-bottom: 25px;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-size: 26px;
-  line-height: calc(31/26);
+  line-height: calc(31 / 26);
   color: var(--accent-color);
 }
 .logo-span {
   color: #000000;
 }
 
-.header-link, .nav-link {
+.header-link,
+.nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -66,19 +103,23 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus {
   color: var(--accent-color);
 }
 
-.current{
+.current {
   color: var(--accent-color);
 }
 
 /* _______________HERO____________ */
 
 .hero {
-  background-color:#2F303A;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
 }
+
 
 .hero-title {
   font-weight: 900;
@@ -87,7 +128,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color:var(--hero-color);
+  color: var(--hero-color);
+  max-width: 696px;
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -101,26 +144,39 @@ body {
   letter-spacing: 0.06em;
   color: var(--hero-color);
   cursor: pointer;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.hero-btn{
-  background-color:#2196F3 ;
+.hero-btn {
+  background-color: #2196f3;
 }
 
 /* ____________BENEFITS_____________ */
+
+.benefits{
+  /* background-color: deeppink; */
+}
 
 .benefits-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefits-text {
   line-height: 1.71;
-  color:var(--text-color);
+  color: var(--text-color);
+  max-width: 270px;
 }
 
 /* ______________ACTIVITI_______________ */
+
+.activity{
+  /* background-color: chartreuse; */
+  padding-top: 0;
+}
 
 .section-title {
   font-size: 36px;
@@ -128,14 +184,31 @@ body {
   text-align: center;
 }
 
+.activity-list{
+  margin-top: 50px;
+}
 
 /* _________________TEAM_________________ */
+
+.team{
+  /* background-color: aqua; */
+}
+
+.team-content{
+  padding: 30px 0;
+
+}
+
+.team-list{
+padding-top: 50px;
+}
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -148,21 +221,21 @@ body {
 /* _________________FOOTER+FOOTER(PORTFOLIO)__________ */
 
 .footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
+  padding: 60px 0;
 }
-
 
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-size: 26px;
-  line-height: calc(31/26);
+  line-height: calc(31 / 26);
   color: var(--accent-color);
+
 }
-.footer-logo >span {
+.footer-logo > span {
   color: var(--hero-color);
 }
-
 
 .footer-address-citi {
   font-style: normal;
@@ -170,37 +243,46 @@ body {
   color: var(--hero-color);
 }
 
-.footer-address{
+.footer-address {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+
+.address-content{
+  padding-top: 20px;
 }
 
 .footer-address:hover,
-.footer-address:focus{
+.footer-address:focus {
   color: var(--accent-color);
 }
 
 /* _________________PORTFOLIO__________ */
 
+.portfolio-list-content{
+  padding-bottom: 50px;
+}
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--hero-color);
-  background-color:#2196F3;
+  background-color: #2196f3;
 }
 
 .portfolio-btn {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    color: #212121;
-    cursor: pointer;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
 }
 
-.everyone{
+.everyone {
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -208,15 +290,19 @@ body {
 /* __________________POJECTS_____________ */
 
 .portfolio-projects-titl {
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-    color: var(--title-color);
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-projects-text {
-    font-size: 16px;
-    line-height: 1.87;
-    color:var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-color);
 }
-
+.portfolio-projects-content{
+  padding: 20px 24px;
+  max-width: 322px;
+}
