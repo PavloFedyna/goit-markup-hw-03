@@ -62,16 +62,17 @@ img{
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin: 0 auto;
 }
 
 /*__________ HEDER+HEDER(PORTFOLIO) __________ */
 
 .header{
-background-color: rgba(12, 238, 31, 0.945);
-padding-top: 24px;
-padding-bottom: 25px;
+  border: 1px solid #ECECEC;
+/* background-color: rgba(12, 238, 31, 0.945); */
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -80,9 +81,24 @@ padding-bottom: 25px;
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .logo-span {
   color: #000000;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+.header-list{
+  display: flex;
+  gap: 50px;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
 }
 
 .header-link,
@@ -91,6 +107,10 @@ padding-bottom: 25px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
+}
+
+.header-contact{
+  margin-left: auto;
 }
 
 .header-link:hover,
@@ -138,14 +158,19 @@ padding-bottom: 25px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
+  display: block;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--hero-color);
   cursor: pointer;
   margin: 0 auto;
   margin-top: 30px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 216px;
+  height: 50px;
+  padding: 10px 32px;
 }
 
 .hero-btn {
@@ -156,6 +181,11 @@ padding-bottom: 25px;
 
 .benefits{
   /* background-color: deeppink; */
+}
+.benefits-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .benefits-title {
@@ -185,13 +215,19 @@ padding-bottom: 25px;
 }
 
 .activity-list{
+  display: flex;
   margin-top: 50px;
+  gap: 30px;
+}
+
+.activity-item{
+  width: calc((100% - 60px) / 3);
 }
 
 /* _________________TEAM_________________ */
 
 .team{
-  /* background-color: aqua; */
+  background: #F5F4FA;
 }
 
 .team-content{
@@ -199,8 +235,18 @@ padding-bottom: 25px;
 
 }
 
+.team-item{
+  width: calc((100% - 120px) / 4);
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-list{
-padding-top: 50px;
+  padding-top: 50px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between
 }
 
 .team-name {
@@ -265,6 +311,12 @@ padding-top: 50px;
   padding-bottom: 50px;
 }
 
+.portfolio-list{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--hero-color);
@@ -280,6 +332,10 @@ padding-top: 50px;
   text-align: center;
   color: #212121;
   cursor: pointer;
+  background: #F5F4FA;
+  border-radius: 4px;
+  min-width: 122px;
+  height: 38px;
 }
 
 .everyone {
@@ -305,4 +361,15 @@ padding-top: 50px;
 .portfolio-projects-content{
   padding: 20px 24px;
   max-width: 322px;
+}
+
+.portfolio-projects-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-projects-item{
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
 }
