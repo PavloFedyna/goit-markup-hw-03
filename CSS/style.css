@@ -215,11 +215,12 @@ img{
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .activity-list{
   display: flex;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   gap: 30px;
 }
 
@@ -246,7 +247,7 @@ img{
 }
 
 .team-list{
-  padding-top: 50px;
+  /* padding-top: 50px; */
   display: flex;
   gap: 30px;
 }
@@ -291,19 +292,19 @@ img{
   font-style: normal;
   line-height: 1.71;
   color: var(--hero-color);
-  padding-bottom: 9px;
+  /* padding-bottom: 9px; */
 }
 
 .footer-address {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
+  /* padding-bottom: 9px; */
 }
 
-/* .address-content{
-  padding-top: 20px;
-} */
+.footer-item{
+  margin-bottom: 9px;
+}
 
 .footer-address:hover,
 .footer-address:focus {
@@ -313,13 +314,14 @@ img{
 /* _________________PORTFOLIO__________ */
 
 .portfolio-list-content{
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .portfolio-list{
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn:hover,
@@ -339,8 +341,9 @@ img{
   cursor: pointer;
   background: #F5F4FA;
   border-radius: 4px;
-  min-width: 122px;
-  height: 38px;
+  padding: 6px 22px;
+  /* min-width: 122px;
+  height: 38px; */
   border: none;
 }
 
