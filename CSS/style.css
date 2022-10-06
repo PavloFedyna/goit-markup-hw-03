@@ -50,12 +50,12 @@ ol {
   margin: 0;
   padding-left: 0;
 }
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -70,9 +70,9 @@ img{
 
 /*__________ HEDER+HEDER(PORTFOLIO) __________ */
 
-.header{
-  border: 1px solid #ECECEC;
-/* background-color: rgba(12, 238, 31, 0.945); */
+.header {
+  border: 1px solid #ececec;
+  /* background-color: rgba(12, 238, 31, 0.945); */
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -89,16 +89,16 @@ img{
   color: #000000;
 }
 
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.header-list{
+.header-list {
   display: flex;
   gap: 50px;
 }
-.header-nav{
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -111,7 +111,7 @@ img{
   color: var(--link-text-color);
 }
 
-.header-contact{
+.header-contact {
   margin-left: auto;
 }
 
@@ -139,9 +139,7 @@ img{
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-
 }
-
 
 .hero-title {
   font-weight: 900;
@@ -167,7 +165,7 @@ img{
   cursor: pointer;
   margin: 0 auto;
   margin-top: 30px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 216px;
@@ -182,10 +180,10 @@ img{
 
 /* ____________BENEFITS_____________ */
 
-.benefits{
+.benefits {
   /* background-color: deeppink; */
 }
-.benefits-list{
+.benefits-list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -206,7 +204,7 @@ img{
 
 /* ______________ACTIVITI_______________ */
 
-.activity{
+.activity {
   /* background-color: chartreuse; */
   padding-top: 0;
 }
@@ -218,35 +216,36 @@ img{
   margin-bottom: 50px;
 }
 
-.activity-list{
+.activity-list {
   display: flex;
   /* margin-top: 50px; */
   gap: 30px;
 }
 
-.activity-item{
+.activity-item {
   width: calc((100% - 60px) / 3);
 }
 
 /* _________________TEAM_________________ */
 
-.team{
-  background: #F5F4FA;
+.team {
+  background: #f5f4fa;
 }
 
-.team-content{
+.team-content {
   padding: 30px 0;
-  min-width: 270px;
+  max-width: 270px;
 }
 
-.team-item{
+.team-item {
   width: calc((100% - 120px) / 4);
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list{
+.team-list {
   /* padding-top: 50px; */
   display: flex;
   gap: 30px;
@@ -265,6 +264,33 @@ img{
   line-height: 1.18;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.team-soc-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
+  display: block;
+}
+
+.team-soc-list{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.team-soc-item{
+  gap: 10px;
+}
+
+/* _________________CLIENT__________ */
+
+.client-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 /* _________________FOOTER+FOOTER(PORTFOLIO)__________ */
@@ -302,22 +328,54 @@ img{
   /* padding-bottom: 9px; */
 }
 
-.footer-item{
-  margin-bottom: 9px;
+.footer-item {
 }
 
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
 }
 
+.soc-title{
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+
+}
+.footer-soc-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
+  display: block;
+}
+
+.footer-soc-list{
+  display: flex;
+  gap: 10px;
+}
+
+.c2{
+  display: flex;
+}
+.c3{
+  margin-left: 70px;
+  /* align-items: center; */
+}
+
 /* _________________PORTFOLIO__________ */
 
-.portfolio-list-content{
+.portfolio-list-content {
   /* padding-bottom: 50px; */
 }
 
-.portfolio-list{
+.portfolio-list {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -339,7 +397,7 @@ img{
   text-align: center;
   color: #212121;
   cursor: pointer;
-  background: #F5F4FA;
+  background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
   /* min-width: 122px;
@@ -367,21 +425,20 @@ img{
   line-height: 1.87;
   color: var(--text-color);
 }
-.portfolio-projects-content{
+.portfolio-projects-content {
   padding: 20px 24px;
   min-width: 322px;
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
-.portfolio-projects-list{
+.portfolio-projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
 }
 
-.portfolio-projects-item{
-max-width: 370px;
-margin: 0;
+.portfolio-projects-item {
+  max-width: calc((100%-60px)/3);
+  margin: 0;
 }
